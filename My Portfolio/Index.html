@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Kakooza Hakim Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-container"></div>
+        <img src="images/_Logo.png" alt="Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section id="home">
+        <div class="intro-and-image">
+            <div class="intro">
+                <h1>Hi, I'm Kakooza.</h1>
+                <p>I'm A Catalyst for Sustainable Social Change and Strategic Community Development.<br>Currently Majoring in Business Strategy and Investment at African Leadership University.</p>
+                <button class="cta-button" onclick="scrollToPortfolio()">View My Work</button>
+            </div>
+            <img src="images/Profesional.png" alt="Kakooza Hakim" class="professional-image" />
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+        <h2>About Me</h2>
+        <p>From a tender age, adversity struck home when I lost my father due to inaccessible healthcare, sowing the seeds of a lifelong commitment to community and social impact within me. This personal ordeal did not tether me to sorrow; instead, it propelled me towards a path of altruism and community service, shaping a fervent passion for making a tangible impact in society.</p>
+        <p>Navigating through the diverse and dynamic landscapes of African communities, I have embraced the role of a change-making nomad. My journey involves delving deep into the rich tapestry of cultures, understanding the unique challenges faced by various communities, and innovating sustainable solutions to societal injustices.</p>
+        <p>My passion is deeply rooted in community and program management, always steering towards fostering sustainable social change.<br>
+            My endeavors are not bound by geographical confines, as I immerse myself in the vibrant cultures and challenges encountered in each new locale, enriching my perspective and approach towards community development.</p>
+        <p>Currently, I am pursuing my undergraduate in Entrepreneurial leadership, majoring in  Business Strategy and Investment at the African Leadership University. Here, the focus transcends mere academic achievement, delving into the practical application of business principles with the aim of catalyzing societal transformation and empowerment.</p>
+        <p>My professional and personal journey is a rich tapestry, intricately woven through diverse experiences across Africa. Each community I have engaged with has offered unique lessons, contributing to my evolving narrative in the realm of social change and strategic investment.<br> My path is not merely a career; it is a calling, where every step forward is a stride towards empowering communities and sculpting a future where societal well-being and strategic community development coalesce.</p>
+        <div class="about-buttons">
+            <a href="#education" class="btn">Education Background</a>
+            <a href="#skills" class="btn">Skills & Languages</a>
+        </div>
+    </div>
+        <img src="images/About me.png" alt="Kakooza Hakim" class="about-image" />
+        
+        </div>
+        
+  <div class="education" id="education">
+        <h2>Education</h2>
+        <div class="education-grid">
+        <div class="education-item">
+        <h3>African Leadership University</h3>
+        <p>Bachelor of Science with Honours in Entrepreneurial Leadership</p>
+        <button class="read-more" onclick="openOverlay('alu')">Read More</button>
+        </div>
+        <div class="education-item">
+        <h3>Imagi-Nation University</h3>
+        <p>Certificate in Designing and Leading social impact projects</p>
+        <button class="read-more" onclick="openOverlay('imu')">Read More</button>
+        </div>
+
+        <div class="overlay" id="alu">
+            <div class="overlay-content">
+                <h3>African Leadership University - Rwanda. - Expected to graduate in 2025</h3>
+                <p>Bachelor of Science with Honours in Entrepreneurial Leadership, focus in Business. Investment and strategy.</p>
+                <p><i>{Relevant Coursework: Human-centered design, Root cause analysis, Research, Data Analysis, Communication for impact, Microeconomics, System thinking and Gap analysis, Structured Controversy, Disruption and innovation, Critical Thinking, Quantitative Reasoning, Theory of Change & Opportunity Mapping, Advanced Startups, Building & Scaling Teams, Computational Thinking & Managing Complex Tasks, Prototyping & Go To Market.}</i></p>
+                <button class="close-btn" onclick="closeOverlay('alu')">Close</button>
+            </div>
+        </div>
+        
+        <div class="overlay" id="imu">
+            <div class="overlay-content">
+                <h3>Imagi-Nation University - Sydney, Australia  - 2021.</h3>
+                <p>Certificate in Designing and Leading social impact projects</p> 
+                <p><i>Relevant Coursework: Project management, Human-Centered Design principles, Storytelling for change.</i></p>
+                <button class="close-btn" onclick="closeOverlay('imu')">Close</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="certificates">
+            <h2>Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-item">
+                    <h3>Philanthropy University</h3>
+                    <p>Monitoring and Evaluation, project management</p>
+                    <button class="read-more" onclick="openOverlay('cert1')">Read More</button>
+                </div>
+                <div class="certificates-item">
+                    <h3>Harvard University - HarvardX </h3>
+                    <P>LEAD1x: Exercising Leadership: Foundational Principles<p>
+                    <button class="read-more" onclick="openOverlay('cert2')">Read More</button>
+                </div>
+
+                <div class="certificates-item">
+                    <h3>University of Oxford </h3>
+                    <p>System Thinking and Mapping</p>
+                    <button class="read-more" onclick="openOverlay('cert3')">Read More</button>
+                </div>
+                <div class="certificates-item">
+                    <h3>American Museum of Natural History </h3>
+                    <p>Ecosystem Dynamics and Conservation</p>
+                    <button class="read-more" onclick="openOverlay('cert4')">Read More</button>
+                </div>
+                <div class="certificates-item">
+                    <h3>The University of Tokyo</h3>
+                    <p>Game Theory</p>
+                    <button class="read-more" onclick="openOverlay('cert5')">Read More</button>
+                </div>
+                <div class="certificates-item">
+                    <h3>Macquarie University</h3>
+                    <p>Innovation and emerging technology: Be disruptive</p>
+                    <button class="read-more" onclick="openOverlay('cert6')">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="cert1">
+            <div class="overlay-content">
+                <h3>Philanthropy University - 2019</h3>
+                <p>Monitoring and Evaluation, project management</p>
+                <p>Skills: <i>Impact assessment</i></p>
+                <button class="close-btn" onclick="closeOverlay('cert1')">Close</button>
+            </div>
+        </div>
+        <div class="overlay" id="cert2">
+            <div class="overlay-content">
+                <h3>Harvard University - HarvardX -2022</h3>
+                <P>LEAD1x: Exercising Leadership: Foundational Principles<p>
+                <p>Skills:<i>Public leadership </i><br>
+                <a href="https://courses.edx.org/certificates/92935ad2d9cd48468c55788680fb9ccc" target="_blank"><img src="images/icons8-certificate-50.png" alt="Certificate Icon"></a></p>  
+                <button class="close-btn" onclick="closeOverlay('cert2')">Close</button>
+            </div>
+        </div>
+
+        <div class="overlay" id="cert3">
+            <div class="overlay-content">
+                <h3>University of Oxford - SKOLL CENTER FOR SOCIAL ENTREPRENUERSHIP - 2023.</h3>
+        <p>System Mapping</p>
+        <p>Skills:<i> System thinking, research, Project Presentation.</I></p>  
+        <a href=" https://verified.sertifier.com/en/verify/50409082473771/?ref=email" target="_blank"><img src="images/icons8-certificate-50.png" alt="Certificate Icon"> </a></p> 
+        <button class="close-btn" onclick="closeOverlay('cert3')">Close</button>
+            </div>
+        </div> 
+        <div class="overlay" id="cert4">
+            <div class="overlay-content">
+                <h3>American Museum of Natural History - 2023</h3>
+        <p>Ecology: Ecosystem Dynamics and Conservation</p>
+        <p>Skills: <i>Wild Life Conservation</i></p>
+        <p><a href=" https://www.coursera.org/account/accomplishments/certificate/QQY4XHZPSKV6" target="_blank"><img src="images/icons8-certificate-50.png" alt="Certificate Icon"> </a></p>
+        <button class="close-btn" onclick="closeOverlay('cert4')">Close</button>
+            </div>
+        </div> 
+        
+        <div class="overlay" id="cert5">
+            <div class="overlay-content">
+                <h3>The University of Tokyo -2023</h3>
+        <p>Game Theory</p> 
+        <p>Skills:<i> Analysis, Nash equilibrium</i></p>
+        <p><a href=" https://coursera.org/share/d9dc2f73133ee8aaf67ffcc4dd6a8fef" target="_blank"><img src="images/icons8-certificate-50.png" alt="Certificate Icon"> </a></p>
+        <button class="close-btn" onclick="closeOverlay('cert5')">Close</button>
+            </div>
+        </div> 
+        <div class="overlay" id="cert6">
+            <div class="overlay-content">
+                <h3>Macquarie University -2023</h3>
+        <p>Innovation and emerging technology: Be disruptive</p>
+        <p>Skills:<i> Innovation, Research and Design, Problem-solving, Leadership and Management</i>.</p> 
+       <p><a href=" :https://coursera.org/share/a0078a5ab64d1886ee086e83ca80661af"target="_blank"><img src="images/icons8-certificate-50.png" alt="Certificate Icon"> </a></p>
+       <button class="close-btn" onclick="closeOverlay('cert6')">Close</button>
+            </div>
+        </div> 
+        
+        <div class="skills" id="skills">
+            <h2>Skills & Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Administrative Skills</h3>
+                    <ul>
+                        <li>Data Entry and Analysis</li>
+                        <li>Event Management</li>
+                        <li>Budgeting and Finance Management</li>
+                        <li>Verbal and Written Communication</li>
+                        <li>Presentation</li>
+                        <li>Community Building</li>
+                        <li>G-Suite and MS Suite Proficiency</li>
+                        <li>Program and Project Management</li>
+                        <li>Impact Assessment</li>
+                        <li>Class Management and Lesson Planning</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>System Thinking</li>
+                        <li>Program Embedded Systems</li>
+                        <li>Electronics</li>
+                        <li>Electronic Circuit Designing</li>
+                        <ul>
+                            <li>Altium</li>
+                            <li>Eagle</li>
+                        </ul>
+             
+                        <li>Rapid Prototyping</li>
+                        <li>Programming Languages:</li>
+                        <ul>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                        </ul>
+                    </ul>   
+                </div>
+                <div class="skill-item">
+                    <h3>Design Skills</h3>
+                    <ul>
+                        <li>Video Editing</li>
+                        <li>3D Designing</li>
+                        <li>Web Designing and Management</li>
+                        <li>Software:</li>
+                        <ul>
+                            <li>Adobe Premiere</li>
+                            <li>Canva</li>
+                            <li>SolidWorks</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li><strong>English:</strong> Professional Proficiency</li>
+                        <li><strong>Luganda:</strong> Native</li>
+                        <li><strong>Swahili:</strong> Basic</li>
+                    </ul>
+                </div>
+            </div>
+        </div>       
+       </div>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-content">
+            <div class="experience-card" onclick="openModal('HAP')">
+                <i class="fas fa-briefcase"></i>
+                <h3>Hub Ambassador</h3>
+                <p class="brief-info">ALU, Kampala | Sept-Dec, 2023</p>
+            </div>
+                <div class="experience-card" onclick="openModal('EA')">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Executive Assistant</h3>
+                    <p class="brief-info">(Confidential),Remote| Jun,2022-Jun, 2023</p>
+                </div>
+                    <div class="experience-card" onclick="openModal('phafrique')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Public Health Intern</h3>
+                        <p class="brief-info">Public Health en Afrique, South | Apr - Jun 2023</p>
+                    </div>
+                    <div class="experience-card" onclick="openModal('CarePoint')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Program IT Intern</h3>
+                        <p class="brief-info">CarePoint, USA | Jan - Apr 2023</p>
+                    </div>
+                    <div class="experience-card" onclick="openModal('fundibots')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Alumni Relations Coordinator</h3>
+                        <p class="brief-info">Fundi Bots, Uganda | Jan 2019 - Apr 2022</p>
+                    </div>
+                    <div class="experience-card" onclick="openModal('Tilt')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Programs Manager</h3>
+                        <p class="brief-info">Tilt Consultancy, USA |  Jun 2021 - Mar 2022</p>
+                    </div>
+                    <div class="experience-card" onclick="openModal('Ashoka')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Youth Consultant</h3>
+                        <p class="brief-info">Ashoka, USA |  May -Jun 2021</p>
+                    </div>
+                    <div class="experience-card" onclick="openModal('peacefirst')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Country Ambassador</h3>
+                        <p class="brief-info">Peace First, USA |   Dec 2020 - April 2023</p>
+                    </div>
+            
+                    <div class="experience-card" onclick="openModal('Changemaker')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Global Ambassador</h3>
+                        <p class="brief-info">The Changemaker Project, USA |    May - Dec 2021</p>
+                    </div>
+           
+                    <div class="experience-card" onclick="openModal('Diamond')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Virtual Judge and Mentor</h3>
+                        <p class="brief-info">Diamond Challenge, USA |   Feb 2019 - Jun 2022</p>
+                    </div>
+            
+                    <div class="experience-card" onclick="openModal('Mari')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Founder</h3>
+                        <p class="brief-info">Mari Test, Uganda |   Sep 2022 - To date</p>
+                    </div>
+        
+                    <div class="experience-card" onclick="openModal('AidYou')">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Co-Founder</h3>
+                        <p class="brief-info">Aid You, Italy |   Apr 2017 - Dec 2021</p>
+                    </div>
+                    
+
+
+            <!-- Additional Experience Cards... -->
+            <div class="modal" id="HAP">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('HAP')">&times;</span>
+                    <h3>Hub Ambassador - Kampala, Uganda (Part-time)</h3>
+                    <p>African Leadership University (ALU), Rwanda<br>
+                        Sept-Dec, 2023<br>
+                         <a href="https://www.alueducation.com/" target="_blank">About ALU</a></p>
+                        <p>ALU provides higher education for a higher purpose. ALU students declare missions, not majors, developing real-world skills to tackle the world’s most pressing challenges. They take ownership of their learning from day one through peer and student-led approaches, believing in the power and agency of young people to start shaping the future right now.</p>
+                        <P>In my role as a Hub Ambassador, I was entrusted with strategic engagement, spearheading initiatives to foster robust student engagement within the hubs, operational efficiency, streamlining travel logistics in close collaboration with the Community Engagement Coordinator (CEC), and more.</p>
+                        <p><b>Skills & Achievements:</b></p>
+                        <p>Developed strategic engagement and operational efficiency skills through initiatives and logistics management. Successfully curated and delivered tailored workshops, presentations, and activities, enhancing the hub-centric student experience and elevating the Hubs' profile and functionality through internal and external stakeholder collaboration.</p>
+                </div>
+            </div>
+            <div class="modal" id="EA">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('EA')">&times;</span>
+                    <h3>Executive Assistant - Remote</h3>
+                    <p>Non-Profit Organization(Confidential)<br>
+                    June 2022–June 2023</p>
+                    <p>In my role as an Executive Assistant, I provided comprehensive support to a top executive in a large-scale, not-for-profit organisation, ensuring streamlined operations and efficient management of the executive's schedule and communications,. </P>
+                    <p>I was instrumental in facilitating effective communication, managing projects, organising events, and maintaining a meticulously organised document management system, among other responsibilities.</p>
+                    <p><b>Skills & Achievements:</b></P>
+                    <p>In my year as an Executive Assistant, I seamlessly blended administrative support with a personal approach, ensuring the executive's schedule was always optimized.<br>My knack for organizing, whether it was nailing down the logistics for various events or managing a sea of documents, was crucial in keeping operations smooth. Handling communications, I became a key liaison, ensuring messages were conveyed accurately and timely.<br>My role also had me dipping my toes into project coordination, ensuring milestones were hit on time. Above all, maintaining a vault-like security over sensitive information was paramount, ensuring confidentiality was never breached.</P>
+                    
+                </div>
+            </div>
+            <div class="modal" id="phafrique">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('phafrique')">&times;</span>
+                    <h3>Public Health Intern - Remote (Internship)</h3>
+                    <p>Public Health en Afrique, South Africa<br>
+                    Apr 2023 - Jun 2023<br>
+                    <a href=”https://www.phafrique.com/” " target="_blank">About Care Points</a> </p>
+                    <p>Public Health Afrique, a dynamic organization focused on developing public health interventions tailored to the African community, aims to consolidate public health skills and establish collaborative relationships with co-founders and fellow interns. The organization is passionate about addressing health problems unique to the African context and applying classroom knowledge to these issues.</p>
+                    <p>During my three-month internship, I was committed to acquiring an understanding of health problems unique to the African context, designing and implementing impactful projects, and more.</p>
+                    <p><b>Skills & Achievements:</b></p>
+                    <p>Enhanced project design and public health knowledge, contributing to the development and implementation of impactful projects that supported the growth and success of Public Health Afrique. <br>Engaged with public health professionals and guest speakers to expand knowledge and skills in the public health sector.</p>
+                    
+                </div>
+            </div>
+
+            <div class="modal" id="CarePoint">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('CarePoint')">&times;</span>
+                    <h3>Program IT Intern - Remote (Internship)</h3>
+                    <p>CarePoint, USA<br>
+                    Jan - April, 2023<br>
+                    <a href=”https://africahealthholdings.com/”  target="_blank">About Care Points</a> </p>
+                    <p>CarePoint, a Pan-African tech-forward healthcare group, is building Africa's healthcare future using technology and innovation. Serving 1 million patients via 65+ healthcare facilities in Egypt, Ghana, Kenya, and Nigeria, CarePoint ambitiously aims to serve 100 million Africans by 2030, primarily driven by its technology platform.</p>
+                    <p>I worked with the Data Abstraction Team to develop and implement a data abstraction layer, involving defining software requirements, creating technical and user documentation, and supporting project teams throughout the project lifecycle.</p>
+                    <p><b>Skills & Achievements:</b></p>
+                    <p>Enhanced technical writing and project management skills through hands-on experience in the software development process. Successfully supported project teams, ensuring alignment and adherence to defined software requirements, and contributed to developing and implementing a vital data abstraction layer.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="fundibots">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('fundibots')">&times;</span>
+                    <h3>Alumni Relations Coordinator - Kampala, Uganda</h3>
+                    <p>Fundi Bots Uganda<br>
+                    Jan 2019 - April, 2023<br>
+                    <a href=”https://fundibots.org/”  target="_blank">About Fundi Bots</a></p>
+                    <p>Fundi Bots promotes improved, practical science education in African schools and communities through hands-on skills and project-based training, focusing on rural and underprivileged regions and pushing for equitable inclusion for girls. To date, Fundi Bots has trained 35,000 students, radically improving school curriculum knowledge and classroom performance, providing hands-on vocational skills and career development, and empowering students to be forces of change in their communities.</p>
+                    
+                    <p>In this role, I developed and managed programs catering to the interests and needs of the alumni, pioneered the Fundi Bots Alumni community, and led all University and alumni-related activities.</p>
+                    
+                    <p><b>Skills & Achievements:</b></p>
+                    <p>Developed program management and community-building skills, successfully pioneering the Fundi Bots Alumni community and fostering collaboration among alumni from different universities. <br> Led a network of 20 university coordinators from 18 universities and organized impactful connect sessions and internship training for university students.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="Tilt">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('Tilt')">&times;</span>
+                    <h3>Programs Manager - Remote</h3>
+                    <p>Tilt Consultancy, United States  <br>
+                   June 2021 - Mar 2022
+                   <a href=”https://tiltchange.org/” target="_blank"><br>About Tilt Consultancy </a></p>
+                    <p >Tilt Consultancy, rooted in Ashoka’s Tilt Camp 2021, is a web of young changemakers driven to bring agency, engagement, and change in different areas of society under the direction of the UN’s 17 Sustainable Development Goals. These agents of change, dedicated to improving our world one project at a time, make for the perfect consultants to businesses looking to implement social impact into their business models.<br>
+                   I spearheaded program planning and coordination, ensuring meticulous implementation and progress tracking against Year 1 Goals and more.<br>
+                   <p><b>Skills & Achievements</b>:</p>
+                   <p>Enhanced program management and team coordination skills, successfully spearheading program planning and coordination, ensuring meticulous implementation and progress tracking against Year 1 Goals. Fostered positive internal and external relations, facilitated seamless communication, and ensured team alignment with project objectives.</p>  
+                </div>
+            </div>
+
+            <div class="modal" id="Ashoka">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('Ashoka')">&times;</span>
+                    <h3>Youth Consultant - Remote (Volunteer)</h3>
+                   <p>Ashoka & Sole2Sole Nonprofit - Los Angeles, United States<br>
+                   May 2021- June 2021<br>
+                   <a href=”https://www.ashoka.org/en-ke/tilt  target="_blank">About Tilt</a></p>
+                   <p>Tilt, a pilot program designed to unite young people worldwide, facilitates brainstorming, development, and pitching initiatives that advance a Sustainable Development Goal. Selected applicants participate in prototyping and collaborative sessions to develop a formal plan or proof of concept for SDG innovation, presenting their ideas to potential partners and companies.</p>
+                   <p>I worked with Ashoka & Sole2sole Non-profit to design the Tilt program, providing mentorship to young social leaders and facilitating the first Tilt camp in Brazil from May to September 2021.</P>
+                   <p><b>Skills & Achievements:</b></p>
+                   <p>Assisted in program design and youth mentorship skills, successfully facilitating the first Tilt camp and providing pivotal mentorship to young social leaders. <br>Contributed to the design and implementation of the Tilt program, ensuring a structured and impactful experience for participants.</p>
+                   
+                </div>
+            </div>
+
+            <div class="modal" id="peacefirst">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('peacefirst')">&times;</span>
+                    <h3>Country Ambassador - (Volunteer)</h3>
+                   <p>Peace First, United States <br>
+                   Dec 2020 - April 2023<br>
+                   <a href=”https://peacefirst.org/” target=”_blank”>About Peace First</a></p>
+                   <p>Peace First, founded at Harvard University in 1991, has supported thousands of young people worldwide to address issues in their community, from poverty and violence to gender inequality and climate change, investing millions of dollars in their ideas for social change. Serving young people in over 140 countries, <br>Peace First emphasizes youth-led social action as a powerful solution to the world’s most entrenched problems.</p>
+                   <p>As a country ambassador, my main role involved community building, organizing events for young people, “PeaceMakers,” and recruiting young people to Peace First to access resources.</p>
+                   <p><b>Skills & Achievements:</b></p>
+                   <p>Honed community building and event organization skills, successfully organizing the first Peace First Post Mini Grant workshop in Uganda, which convened 70 peacemakers from Uganda, Kenya, and Nigeria. <br>Mentored peacemakers from the Sub-Saharan region, fostering skill development and collaborative initiatives.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="Changemaker">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('Changemaker')">&times;</span>
+                    <h3>Global Ambassador - Remote (Volunteer)</h3>
+                    <p>The Changemaker Project, United States<br>
+                    May - Dec 2021<br>
+                    <a href=”https://www.thechangemakerproject.org/” target=”_blank”>About ChangeMaker Project</a></p>
+                    <p>The Changemaker Project, a nonprofit dedicated to empowering and cultivating the next generation of changemakers, offers an online course to teach youth about social and environmental justice issues and helps them build innovative solutions to real-world problems.<br> Students worldwide join the program annually and compete to win funding for their projects at the Global Pitch event.
+                    <br>As a global ambassador, I participated in the recruitment of changemakers from African countries.</p>
+                    <p><b>Skills & Achievements:</b></p>
+                    <p>Developed recruitment and youth engagement skills, successfully participating in the recruitment of changemakers from various African countries and contributing to the global network of young social innovators.</p> 
+                </div>
+            </div>
+
+            <div class="modal" id="Diamond">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('Diamond')">&times;</span>
+                    <h3>Virtual Judge and Mentor - Remote (Volunteer)</h3>
+                    <p>Diamond Challenge, United States <br>
+                    Feb 2019 - Feb 2022<br>
+                    <a href=”https://www.diamondchallenge.org/” target=”_blank”>About Diamond Challenge</a></p>
+                    <p>The Diamond Challenge, the world’s top-rated high school entrepreneurship competition, opens doors for student change-makers by connecting them to international relationships, resources, and feedback needed to push their ideas forward. <br>Over the past three years, I coached over 50 teams of high school students from around the globe using evidence-based entrepreneurship methodologies.</p>
+                    <p><b>Skills & Achievements:</b></p>
+                    <p>Developed mentoring and coaching skills, guiding over 50 teams of high school students using evidence-based entrepreneurship methodologies. Contributed to the entrepreneurial ventures of high school students in the world’s top-rated entrepreneurship competition.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="Mari">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('Mari')">&times;</span>
+                    <h3>Mari Test</h3>
+                    <p>During my internship in 2021, I almost lost my life to malaria because I couldn’t access the diagnosis and treatment on time. <br>As I recuperated from this life-threatening illness, I got much more interest in knowing more about Malaria, i.e., how we can end Malaria. <br>My research unraveled that annually, Malaria infects approximately 240 million people worldwide, making it one of the most infectious diseases that has existed over decades. <p>Despite being 100% curable, In 2020, Malaria accounted for an estimated 627,000 deaths worldwide. 96% of these deaths happened in Africa, of which 80% were children below the age of 5 years, according to the World Health Organisation 2020 report on Malaria. </p><p>This motivated me to leverage my technical skills and together with my colleagues we founded Mari Test.</p>
+                    <p>Our Mission: To Leverage the power of technology to accelerate the eradication of malaria in low-income communities.</p>
+                </div>
+            </div>
+
+            <div class="modal" id="AidYou">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('AidYou')">&times;</span>
+                    <h3>Aid You</h3>
+                    <p>At 16 years, I co-founded "AidYou," a cross-continental community initiative in collaboration with a colleague in Italy. This venture was not merely an initiative but a learning journey where I acquired pivotal skills in CPR and Basic Life Support. </p><p>My commitment saw me dedicating weekends and school holidays to traverse schools, raising awareness about heat-related illnesses, and imparting life-saving skills to students. <br>The ripple effect of this project was profound, training over 2,000 students.</p>
+                </div>
+            </div>
+            <!-- Additional Modals... -->
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <!-- Project 1: AidYou -->
+            <div class="portfolio-post">
+                <h3>Co-Founding "AidYou": A Cross-Continental Initiative to democratize heart health information</h3>
+                <img src="images/AidYou 1.jpeg" alt="Event Photo 1">
+                <p>At the age of 16, I co-founded "AidYou," a cross-continental community initiative...</p>
+                <button class="read-more" onclick="openOverlay('overlay1')">Read More</button>
+            </div>
+            <div class="overlay" id="overlay1">
+                <div class="overlay-content">
+                    <p>At the age of 16, I co-founded "AidYou," a cross-continental community initiative, in collaboration with a colleague in Italy, which blossomed into more than just a venture - it became a transformative learning journey. </p><p>This initiative was meticulously crafted to traverse beyond borders, aiming to impart crucial skills in CPR and Basic Life Support to communities that needed them the most.<br> My commitment was mirrored in the dedication of weekends and school holidays to traverse schools, raising awareness about heat-related illnesses, and imparting life-saving skills to students.<br> The ripple effect of this project was profound, culminating in the training of over 2,000 students.</p>
+
+                    <p>This initiative allowed me to explore and enhance my skills in:</p>
+                    
+                    <p><b>Community Education: </b>Engaging in direct community interaction and education, and providing vital knowledge and skills related to CPR and Basic Life Support to a wide demographic of students.</p>
+                    
+                    <p><b>Awareness Campaigning:</b> Spearheading campaigns to raise awareness about heat-related illnesses, employing various communication and engagement strategies to convey crucial information to diverse audiences effectively.</p>
+                    
+                    <p><b>Collaborative Learning: </b>Navigating through the challenges and rewards of international collaboration, learning to coordinate and execute a community project across continents and cultures.</p>
+                    
+                    <p><b>Impact Measurement: </b>Observing and analyzing the impact of educational initiatives on communities, understanding the ripple effects of knowledge dissemination and skill acquisition on individual and community health outcomes.</p>
+                    
+                    <p><b>Leadership and Initiative: </b>Taking the helm of a project at a young age, learning the ropes of leadership, project management, and initiative-taking, and understanding the nuances of leading a community-focused project.</p>
+                    
+                    <p>"AidYou" not only fortified my skills in community education, awareness campaigning, and international collaboration but also underscored the profound impact that knowledge and skill-sharing can have on communities, particularly in the realm of health and wellbeing.</p>
+                    
+                    <button class="close-btn" onclick="closeOverlay('overlay1')">Close</button>
+                </div>
+            </div>
+    
+            <!-- Project 2: Peace First Workshop -->
+            <div class="portfolio-post">
+                <h3>Organised Peace First Post Mini-Grant Workshop - 2021</h3>
+                <img src="images/Peace First.jpeg" alt="Event Photo 2">
+                <p>In my role as a Country Ambassador, I orchestrated the inaugural Peace First Post Mini-Grant Workshop...</p>
+                <button class="read-more" onclick="openOverlay('overlay2')">Read More</button>
+            </div>
+            <div class="overlay" id="overlay2">
+                <div class="overlay-content">
+                    <p>Peace First, founded in 1991 at Harvard University by a group of 18-year-olds, has steadfastly believed in the transformative power of youth-led social action as a potent solution to the world’s most entrenched problems. <br<Over the past three decades, Peace First has supported thousands of young people across the globe to address issues in their communities, ranging from poverty and violence to gender inequality and climate change, investing millions of dollars in their innovative ideas for social change. <br>Serving young people in over 140 countries, Peace First continues to be a beacon of support and belief in the power of youth to enact significant change. [More about Peace First](https://peacefirst.org/about/)</p>
+
+                        <p>In my role as a Country Ambassador, I orchestrated the inaugural Peace First Post Mini-Grant Workshop in 2021, a pivotal landmark in our community engagement endeavors. This workshop convened 70 peacemakers from Uganda, Kenya, and Nigeria, offering them vital training on project sustainability and facilitating an invaluable one-on-one interaction with the Peace First Sub-Saharan African Regional Manager.</p>
+                        
+                        <p>This initiative enabled me to delve into:</p>
+                        <p><b>Partnership Establishment: </b>I successfully forged a partnership with the American Center in Kampala, securing a complimentary venue and nurturing a collaborative relationship that amplified the workshop's success.</p>
+                        <p><b>Event Management: </b>I adeptly navigated through the intricate logistics of event planning, from meticulous budgeting to seamless execution, ensuring every facet of the workshop was conducted proficiently and delivered value to the participants.</p>
+                        <p><b>Community Building and Engagement: </b>I mobilized and united 70 peacemakers, aged 13-25, from Uganda, Kenya, and Nigeria, crafting a vibrant and collaborative environment where ideas and experiences were shared and enduring connections were forged.</p>
+                        
+                        <p>This workshop not only bolstered my skills in partnership development, event management, and community engagement but also highlighted the impact of collaborative learning and knowledge sharing among young peacemakers in the region.</p>
+                        
+                    <button class="close-btn" onclick="closeOverlay('overlay2')">Close</button>
+                </div>
+            </div>
+    
+            <!-- Project 3: IMAGI-NATION{University} -->
+            <div class="portfolio-post">
+                <h3>Elevating Social Impact through IMAGI-NATION{University}</h3>
+                <img src="images/imagination.JPG" alt="Event Photo 3">
+                <p> I pioneered two workshops, one each at Cavendish University and St. Lawrence University in Uganda, successfully assembling 80 university students from five distinct universities in Kampala, Uganda...</p>
+                <button class="read-more" onclick="openOverlay('overlay3')">Read More</button>
+            </div>
+            <div class="overlay" id="overlay3">
+                <div class="overlay-content">
+                    <p>IMAGI-NATION{University}, conceived to revitalize diverse networking approaches across educational institutions, businesses, residences, and communal spaces, aspires to amplify what we esteem—recognizing the intellect of those emerging from the peripheries. The initiative blossoms through imagination and rooted relationships that circulate information in both innovative and conventional, albeit unforeseen, manners.</p>
+
+                    <p>In my capacity as a Co-Founder and University President at Imagi-Nation University, under the aegis of the Australian Indigenous Mentoring Experience, my role expanded into the sphere of student recruitment. I pioneered two workshops, one each at Cavendish University and St. Lawrence University in Uganda, successfully assembling 80 university students from five distinct universities in Kampala, Uganda.</p>
+                    
+                    <p>Throughout these workshops, I also steered a session on Sustainable Social Entrepreneurship, shedding light on how to harness existing systems to sculpt a sustainable impact within the community.</p>
+                    
+                    <p>This initiative enabled me to explore:</p>
+                    <p><b>Strategic Recruitment:</b> Crafted and executed innovative recruitment strategies that successfully magnetized and engaged students from various universities, thereby enriching the student body of Imagi-Nation University.</p>
+                    <p><b>Workshop Facilitation: </b>Directed workshops that not only served as a recruitment conduit but also as a knowledge exchange platform, imparting insights into sustainable social entrepreneurship to the participants.</p>
+                    <p><b>Knowledge Dissemination:</b> Conveyed crucial strategies on how to adeptly leverage existing systems to generate a sustainable, positive impact within communities, thereby nurturing a mindset of social entrepreneurship among the participants.</p>
+                    <p><b>Community Engagement: </b>Established a space for students from diverse universities to network, exchange ideas, and potentially collaborate on future social impact projects, thereby cultivating a community of like-minded individuals.</p>
+                    
+                    <p>This endeavor not only strengthened my skills in strategic recruitment and workshop facilitation but also highlighted the significance of knowledge dissemination and community engagement in nurturing a new generation of social entrepreneurs.</p>
+                    
+                    <button class="close-btn" onclick="closeOverlay('overlay3')">Close</button>
+                </div>
+            </div>
+            <!-- Project 4: Celebrating International Youth Day 2023 -->
+            <div class="portfolio-post">
+                <h3>Organised a Youth-Led Workshop to celebrate International Youth Day 2023 with </h3>
+                <img src="images/IYD.JPG" alt="Event Photo 4">
+                <p>In alignment with International Youth Day 2023 and its theme, "Green Skills for Youth: Towards a Sustainable World,"...</p>
+                <button class="read-more" onclick="openOverlay('overlay4')">Read More</button>
+            </div>
+            <div class="overlay" id="overlay4">
+                <div class="overlay-content">
+                    <p>In alignment with International Youth Day 2023 and its theme, "Green Skills for Youth: Towards a Sustainable World," I orchestrated a youth-led workshop at the African Leadership University Kampala Hub, uniting 50 spirited youths from around the city. <br>.The workshop was not merely an event but a confluence of energy, enthusiasm, and inspiring insights shared by the vibrant participants.</p>
+
+                        <p>This initiative allowed me to immerse myself in:</p>
+                        <p><b>Youth Empowerment: </b>Facilitating a platform where young individuals could voice their perspectives, share their innovative ideas, and collaborate towards fostering a sustainable world, thereby empowering them to be active contributors to global sustainability efforts.</p>
+                        <p><b>Event Coordination:</b>Managing all aspects of the workshop, from conceptualization to execution, ensuring a smooth and impactful event that resonated with the theme and provided a meaningful experience for all participants.</p>
+                        <p><b>Community Engagement:</b> Creating a space where youths from various backgrounds could connect, share their insights, and potentially forge future collaborations, thereby enhancing the community's collective effort towards sustainability.</p>
+                        <p><b>Promotion of Sustainable Practices: </b>Through the workshop, I was able to promote the importance of green skills and sustainable practices among the youth, inspiring them to integrate sustainability into their future endeavors and contribute towards a more sustainable world.</p>
+                        
+                        <p>The workshop not only fortified my skills in youth empowerment, event coordination, and community engagement but also underscored the vital role of youth in championing sustainable practices and contributing towards a greener, more sustainable world.</p>
+                    <button class="close-btn" onclick="closeOverlay('overlay4')">Close</button>
+                </div>
+            </div>
+          
+        
+            <div class="portfolio-post">
+                <h3>Research Publications: Investigating Vaccine Dynamics in Uganda</h3>
+                <img src="images/research.jpg" alt="Event Photo 6">
+                <p>Embarking on a year-long research journey as a model student, I am currently delving into a critical public health study...</p>
+                <button class="read-more" onclick="openOverlay('overlay6')">Read More</button>
+            </div>
+            <div class="overlay" id="overlay6">
+                <div class="overlay-content">
+                    <p>Embarking on a year-long research journey as a model student, I am currently delving into a critical public health study titled <i>"Investigating the Relationship Between Vaccine Intake, Wastage, and Public Health in Uganda: Descriptive Study.” </i>The research pivots around the intricate relationship between vaccine intake, wastage, and the overarching public health scenario in Uganda, a low-income country with a population exceeding 40 million. Vaccines have been substantiated to be a cost-effective strategy in preventing infectious diseases, especially among susceptible populations. <br>Nonetheless, vaccine wastage poses a potential threat by inducing unnecessary costs and diminishing the efficacy of immunization programs on public health.</p>
+    
+                    <p>This research endeavor has enabled me to explore and enhance my skills in:</p>
+                    <p><b>In-depth Research:</b> Conducting comprehensive research, involving meticulous data collection, analysis, and interpretation to explore the multifaceted relationship between vaccine logistics and public health outcomes in Uganda.</P>
+                    <p><b>Analytical Skills:</b>Employing rigorous analytical methodologies to decipher patterns, correlations, and insights from complex data sets related to vaccine intake and wastage.</p>
+                    <p><b>Public Health Understanding: </b>Gaining a deeper understanding of the public health landscape in Uganda, particularly in the context of vaccine distribution, intake, and wastage, and its implications on overall public health.</p>
+                    
+                    <p><b>Communication of Findings:</b> Developing capabilities in effectively communicating research findings, ensuring that complex data and insights are accessible and comprehensible to a diverse audience, thereby contributing to informed decision-making in public health strategies.</p>
+                    
+                    <p><b>Problem-Solving: </b>Identifying challenges and gaps within the existing vaccine distribution and public health framework in Uganda, and proposing evidence-based solutions and strategies to mitigate vaccine wastage and enhance public health outcomes.</p>
+                    
+                    <p>The research not only fortifies my skills in analytical research and public health understanding but also contributes to the broader knowledge and strategies pertinent to optimizing vaccine distribution and minimizing wastage, thereby enhancing the impact of immunization programs on public health in low-income countries like Uganda.</p>
+                    
+                    <button class="close-btn" onclick="closeOverlay('overlay6')">Close</button>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+        
+    </section>
+
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+            <img src="images/Ikigai.jpeg" alt="Blog Image 1">
+            <h3><a href="https://medium.com/we-are-gcm/how-my-experience-determined-my-ikigai-b8479be860b" target="_blank">How My Experience Determined My Ikigai</a></h3>
+            <p>Embark on a journey with me as I unravel the threads of my experiences, weaving them into the tapestry of my Ikigai. This blog post explores the profound impact of personal experiences on determining one's "reason for being" and how they intricately intertwines with our passions, vocations, and professions.</p>
+            <a href="https://medium.com/we-are-gcm/how-my-experience-determined-my-ikigai-b8479be860b" target="_blank" class="read-more">Read More</a>
+            </div>
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+                <img src="images/African.jpg" alt="Blog Image 2">
+                <h3><a href="https://kakoozahakim10.medium.com/what-does-it-mean-to-be-an-african-in-the-21st-century-1cc7e5c410eb" target="_blank">What Does It Mean to Be an African in the 21st Century?</a></h3>
+                <p>In this reflective piece, I delve into the multifaceted identity of being an African in our contemporary world. Navigating through the realms of culture, globalization, and individuality, this blog post seeks to explore the rich tapestry that forms the African identity amidst the globalized 21st century.</p>
+                <a href="https://kakoozahakim10.medium.com/what-does-it-mean-to-be-an-african-in-the-21st-century-1cc7e5c410eb" target="_blank" class="read-more">Read More</a>
+            </div>
+            <!-- Blog Post 3 -->
+            <div class="blog-post">
+                <img src="images/Diana Award.jpeg" alt="Blog Image 3">
+            <h3><a href="https://kakoozahakim10.medium.com/outstanding-young-hero-in-kampala-receives-award-in-memory-of-princess-diana-8b9646c26728" target="_blank">Outstanding Young Hero in Kampala Receives Award in Memory of Princess Diana</a></h3>
+            <p>Join me in celebrating an extraordinary achievement as a young hero in Kampala is honored with an award in memory of Princess Diana. This blog post shines a light on the remarkable accomplishments of young individuals who, with their relentless spirit and impactful initiatives, carve out a path of positive change in their communities.</p>
+            <a href="https://kakoozahakim10.medium.com/outstanding-young-hero-in-kampala-receives-award-in-memory-of-princess-diana-8b9646c26728" target="_blank" class="read-more">Read More</a>
+            </div>
+            <!-- Blog Post 4 -->
+            <div class="blog-post">
+                <img src="images/Mari Test Community.JPG" alt="Blog Image 4">
+            <h3><a href="https://kakoozahakim10.medium.com/africa-beyond-malaria-from-being-a-survivor-to-reinventing-malaria-diagnosis-and-treatment-bd1f643cb64e" target="_blank">Africa Beyond Malaria: From Being a Survivor to Reinventing Malaria Diagnosis and Treatment</a></h3>
+            <p>Embark on a transformative journey from surviving malaria to revolutionizing its diagnosis and treatment in Africa. This blog post narrates a personal battle with malaria that ignited a fervent passion and commitment to mitigating the malaria menace in Africa through innovative solutions, thereby contributing to a future where the continent is liberated from the clutches of this pervasive disease.</p>
+            <a href="https://kakoozahakim10.medium.com/africa-beyond-malaria-from-being-a-survivor-to-reinventing-malaria-diagnosis-and-treatment-bd1f643cb64e" target="_blank" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="featured">
+            <h2>Featured Publications:</h2>
+            <img src="images/Black pearl.jpeg" alt="Featured Image">
+            <p><a href="https://www.newtimes.co.rw/article/973/news/featured/black-pearl-global-investments-concludes-african-healthcare-conference-explores-local-partnerships" target="_blank">Black Pearl Global Investments Concludes African Healthcare Conference, Explores Local Partnerships</a></p>
+            <h2>Awards:</h2>
+            <ul>
+                <li>Diana Award 2021</li>
+                <li>One in a million Award 2020</li>
+                <li>Fellow at Millenium Fellowship</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me through the following:</p>
+        <div class="social-links">
+            <a href="https://twitter.com/Kakooza_hakeem" target="_blank">
+                <img src="images/icons8-twitter-50.png" alt="Twitter Icon"> Twitter
+            </a>
+            <a href="https://www.linkedin.com/in/kakooza-hakim/" target="_blank">
+                <img src="images/icons8-linkedin-50.png" alt="LinkedIn Icon"> LinkedIn
+            </a>
+        </div>
+        <p>Phone: +256 752766910 / +256 757131219</p>
+        <p>Email: <a href="mailto:hakim@kakooza.com">kakoozahakim10@gmail.com</a></p>
+        <p>Location: Kampala, Uganda</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Kakooza Hakim</p>
+        <p>Designed by Kakooa Hakim</p>
+    </footer>
+</body>
+</html>

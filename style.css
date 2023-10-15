@@ -1,0 +1,569 @@
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --primary-color: #333;
+    --secondary-color: #f8f8f8;
+    --accent-color: #007bff;
+    --text-color: #333;
+    --btn-hover-color: #fff;
+    --btn-hover-bg: #000;
+}
+body {
+    font-size: 16px; /* Base font size */
+
+        overflow-x: hidden;
+      
+}
+
+h1 {
+    font-size: 2em; /* 32px */
+}
+
+h2 {
+    font-size: 1.75em; /* 28px */
+}
+
+h3 {
+    font-size: 1.3em; /* 24px */
+}
+
+p, li, a {
+    font-size: 1em; /* 16px */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 150px;
+    position: fixed;
+    width: calc(100% - 300px);
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 150px;
+}
+#logo {
+    max-width: 50px; /* Adjust as per requirement */
+    height: auto;
+    margin-bottom: -30px;
+}
+section {
+    padding-top: 80px; /* Adjust according to the height of your header */
+}
+#home .intro-and-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevents wrapping onto the next line */
+}
+
+#home .intro {
+    max-width: 50%; /* Adjust as per requirement */
+    text-align: center;
+}
+
+#home .professional-image {
+    max-width: 65%; /* Adjust as per requirement */
+    height: auto;
+    margin-left: 50px;
+}
+
+.about-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: var(--primary-color); 
+    color: var(--secondary-color);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn:hover, .btn:focus {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-color);
+    border: 1px solid var(--primary-color);
+}
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.education-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.certificate img {
+        width: 14px;
+        height: 14px;
+        margin-right: 8px;
+        vertical-align: middle;
+}
+
+.read-more {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    overflow-y: auto;
+    max-height: 80%;
+}
+
+.close-btn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#experience {
+    background-color: #f8f8f8;
+    padding: 50px 150px;
+    text-align: Left;
+}
+
+.experience-content {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.brief-info {
+    color: #777;
+}
+
+i {
+    color: #333;
+    font-size: 14px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.featured {
+    margin-top: 20px;
+}
+footer {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+.featured h2 {
+    font-size: 1.5em;
+}
+
+.featured p, .featured ul {
+    margin: 10px 0;
+}
+
+.featured ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.brief-description, .full-description {
+    margin: 10px 0;
+}
+
+.full-description {
+    display: none;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px;
+}
+
+.about-text {
+    max-width: 100%; /* Adjust as per requirement */
+    margin-left: -200px;
+}
+
+.about-image {
+    max-width: 500px; /* Adjust as per requirement */
+    max-height: 500px;
+    height: auto;
+    margin-right: -150px; /* Adjusted margin for a bit of space between text and image */
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.portfolio-post {
+    background-color: #f8f8f8; /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Space inside each post */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+}
+
+.portfolio-post img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.portfolio-post:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+}
+#blog {
+    padding: 16px;
+    max-width: 1200px; /* Set a maximum width for the blog section */
+    margin: 0 auto; /* Center the blog section on the page */
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 16px; /* Space between items */
+}
+
+.blog-post {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.blog-post img {
+    max-width: 70%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.blog-post:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+}
+.featured {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+.featured h2 {
+    font-size: 1.8em;
+    margin-bottom: 16px;
+}
+
+.featured img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.featured p, .featured ul {
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+
+.featured a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.featured li {
+    margin-bottom: 8px;
+}
+#contact {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 16px;
+}
+
+#contact p {
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-bottom: 16px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* ... other CSS ... */
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header, section {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+    /* ... other responsive styles ... */
+}
+
+
+/* Responsive Design: Adjust button size for smaller screens */
+@media (max-width: 600px) {
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header, body {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+}
+
+
+@media (max-width: 960px) {
+    .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px){
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Responsive Design: Adjust grid for smaller screens */
+@media (max-width: 900px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Responsive Design: Adjust grid for smaller screens */
+@media (max-width: 900px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 900px) {
+    .featured img {
+        max-width: 100%;
+    }
+}
+
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 600px) {
+    #contact p {
+        font-size: 0.9em;
+    }
+    
+    .social-links img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+

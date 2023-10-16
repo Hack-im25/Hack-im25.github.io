@@ -5,23 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Kakooza's Portfolio</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>
+        Kakooza's Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="header-container"></div>
-        <img src="images/logo.png" alt="Logo" id="logo">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+<div class="header-container">
+    <img src="images/logo.png" alt="Logo" id="logo">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Hamburger Button -->
+<button class="hamburger" onclick="toggleMenu()">
+&#9776;
+</button>
+<div id="mobile-nav">
+<nav>
+    <!-- Your existing navigation links go here -->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</div></div>
+
+       
     </header>
     <section id="home">
         <div class="intro-and-image">
@@ -42,12 +62,13 @@
         <p>From a tender age, adversity struck home when I lost my father due to inaccessible healthcare, sowing the seeds of a lifelong commitment to community and social impact within me. This personal ordeal did not tether me to sorrow; instead, it propelled me towards a path of altruism and community service, shaping a fervent passion for making a tangible impact in society.</p>
         <p>Navigating through the diverse and dynamic landscapes of African communities, I have embraced the role of a change-making nomad. My journey involves delving deep into the rich tapestry of cultures, understanding the unique challenges faced by various communities, and innovating sustainable solutions to societal injustices.</p>
         <p>My passion is deeply rooted in community and program management, always steering towards fostering sustainable social change.<br>
-            My endeavors are not bound by geographical confines, as I immerse myself in the vibrant cultures and challenges encountered in each new locale, enriching my perspective and approach towards community development.</p>
+         My endeavors are not bound by geographical confines, as I immerse myself in the vibrant cultures and challenges encountered in each new locale, enriching my perspective and approach towards community development.</p>
         <p>Currently, I am pursuing my undergraduate in Entrepreneurial leadership, majoring in  Business Strategy and Investment at the African Leadership University. Here, the focus transcends mere academic achievement, delving into the practical application of business principles with the aim of catalyzing societal transformation and empowerment.</p>
         <p>My professional and personal journey is a rich tapestry, intricately woven through diverse experiences across Africa. Each community I have engaged with has offered unique lessons, contributing to my evolving narrative in the realm of social change and strategic investment.<br> My path is not merely a career; it is a calling, where every step forward is a stride towards empowering communities and sculpting a future where societal well-being and strategic community development coalesce.</p>
+        
         <div class="about-buttons">
             <a href="#education" class="btn">Education Background</a>
-            <a href="#skills" class="btn">Skills & Languages</a>
+            <a href="#skills" class="btn">Download Resume</a>
         </div>
     </div>
         <img src="images/About me.png" alt="Kakooza Hakim" class="about-image" />

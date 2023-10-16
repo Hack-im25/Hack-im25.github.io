@@ -41,12 +41,20 @@ body {
 }
 
 header {
-    background-color: #fff;
-    padding: 10px 150px;
-    position: fixed;
-    width: calc(100% - 300px);
-    top: 0;
-    z-index: 1000;
+        background-color: #fff;
+        padding: 10px 0; /* Remove the horizontal padding */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    
+.header-container {
+    max-width: calc(100% - 300px); /* Subtracting 150px from both sides */
+    margin: 0 auto; /* This will center the container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -66,14 +74,37 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    color: #333;
+    float: right;
+}
+#mobile-nav {
+    display: none;
+}
+
+#mobile-nav nav ul {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#mobile-nav nav ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
 
 section {
     padding: 50px 150px;
 }
 #logo {
-    max-width: 50px; /* Adjust as per requirement */
+    max-width: 70px; /* Adjust as per requirement */
     height: auto;
-    margin-bottom: -30px;
+    margin-bottom: -20px;
 }
 section {
     padding-top: 80px; /* Adjust according to the height of your header */
@@ -95,7 +126,23 @@ section {
     height: auto;
     margin-left: 50px;
 }
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
 
+.about-text {
+    flex: 1; /* Take up the available space */
+    padding-right: 20px; /* Spacing between text and image */
+    max-width: 60%;
+}
+
+.about-image {
+    max-width: 40%; /* Adjust as per requirement */
+    height: auto;
+}
 .about-buttons {
     text-align: center;
     margin-top: 20px;
@@ -481,11 +528,13 @@ footer {
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
     header, section {
-        padding: 10px; /* Reduced padding for smaller screens */
+        padding: 50px; /* Increased padding for better spacing */
     }
-    /* ... other responsive styles ... */
+    .header-container {
+        padding: 0 0px; /* Horizontal padding */
+        max-width: calc(100%);
+    }
 }
-
 
 /* Responsive Design: Adjust button size for smaller screens */
 @media (max-width: 600px) {
@@ -503,47 +552,17 @@ footer {
 
 
 @media (max-width: 960px) {
-    .certificates-grid {
+    .certificates-grid, .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 640px) {
-    .certificates-grid {
+    .certificates-grid, .skills-grid, .portfolio-grid, .blog-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* Responsive Design for Smaller Screens */
-@media (max-width: 1200px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 640px){
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-/* Responsive Design: Adjust grid for smaller screens */
-@media (max-width: 900px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-/* Responsive Design: Adjust grid for smaller screens */
-@media (max-width: 900px) {
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 
 /* Responsive Design: Adjust for smaller screens */
@@ -559,11 +578,32 @@ footer {
     #contact p {
         font-size: 0.9em;
     }
-    
     .social-links img {
         width: 20px;
         height: 20px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none; /* Hide the desktop navigation on mobile */
+    }
+    #mobile-nav nav ul {
+        display: block; /* Override the above style for mobile navigation */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about-text {
+        padding-right: 0; /* Remove the spacing */
+        text-align: left; /* Align text to the left */
+        width: 100%; /* Ensure it takes full width */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+    .about-image {
+        display: none; /* Hide the image on smaller screens */
+    }
 
+}
